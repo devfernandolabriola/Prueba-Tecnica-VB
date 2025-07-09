@@ -1,0 +1,28 @@
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Examen.exe.config
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Examen.exe
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Examen.pdb
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Examen.xml
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Capa de Dominio.dll
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Entidades.dll
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Data.dll
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Capa de Dominio.pdb
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Capa de Dominio.xml
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Entidades.pdb
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Entidades.xml
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Data.pdb
+C:\Users\fergl\source\repos\Examen\Examen\bin\Debug\Data.xml
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.vbproj.AssemblyReference.cache
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.Form1.resources
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.FormCliente.resources
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.Resources.resources
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.vbproj.GenerateResource.cache
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.vbproj.CoreCompileInputs.cache
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.vbproj.Up2Date
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.exe
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.xml
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.pdb
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.FormProducto.resources
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.FormVenta.resources
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.FormSeleccionarProducto.resources
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.FormDetalleVenta.resources
+C:\Users\fergl\source\repos\Examen\Examen\obj\Debug\Examen.vbproj.ResolveComReference.cache

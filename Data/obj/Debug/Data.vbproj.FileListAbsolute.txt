@@ -1,0 +1,14 @@
+C:\Users\fergl\source\repos\Examen\Data\bin\Debug\Data.dll
+C:\Users\fergl\source\repos\Examen\Data\bin\Debug\Data.pdb
+C:\Users\fergl\source\repos\Examen\Data\bin\Debug\Data.xml
+C:\Users\fergl\source\repos\Examen\Data\bin\Debug\Entidades.dll
+C:\Users\fergl\source\repos\Examen\Data\bin\Debug\Entidades.pdb
+C:\Users\fergl\source\repos\Examen\Data\bin\Debug\Entidades.xml
+C:\Users\fergl\source\repos\Examen\Data\obj\Debug\Data.vbproj.AssemblyReference.cache
+C:\Users\fergl\source\repos\Examen\Data\obj\Debug\Data.Resources.resources
+C:\Users\fergl\source\repos\Examen\Data\obj\Debug\Data.vbproj.GenerateResource.cache
+C:\Users\fergl\source\repos\Examen\Data\obj\Debug\Data.vbproj.CoreCompileInputs.cache
+C:\Users\fergl\source\repos\Examen\Data\obj\Debug\Data.vbproj.Up2Date
+C:\Users\fergl\source\repos\Examen\Data\obj\Debug\Data.dll
+C:\Users\fergl\source\repos\Examen\Data\obj\Debug\Data.xml
+C:\Users\fergl\source\repos\Examen\Data\obj\Debug\Data.pdb
