@@ -69,9 +69,13 @@ Public Class FormSeleccionarProducto
         dgvProductos.DataSource = Nothing
         dgvProductos.DataSource = New BindingList(Of EntidadProducto)(productosFiltrados)
         dgvProductos.Columns("ID").Visible = False
+        dgvProductos.Columns("Categoria").DisplayIndex = 0
+        dgvProductos.Columns("Nombre").DisplayIndex = 1
+        dgvProductos.Columns("Precio").DisplayIndex = 2
     End Sub
 
     Private Sub btnlimpiarSelProducto_Click(sender As Object, e As EventArgs) Handles btnlimpiarSelProducto.Click
-
+        txtBuscarProducto.Text = ""
+        CargarProductos()
     End Sub
 End Class
