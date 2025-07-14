@@ -51,6 +51,7 @@ Public Class FormSeleccionarProducto
         dgvProductos.Rows.Clear()
         dgvProductos.DataSource = New BindingList(Of EntidadProducto)(productos)
         dgvProductos.Columns("ID").Visible = False
+        dgvProductos.Columns("Precio").DefaultCellStyle.Format = "C2"
     End Sub
 
     Private Sub btnBusquedaProducto_Click(sender As Object, e As EventArgs) Handles btnBusquedaProducto.Click

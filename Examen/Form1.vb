@@ -3,6 +3,7 @@ Imports System.Security.Cryptography.X509Certificates
 Imports Capa_de_Dominio
 Imports Entidades
 Imports Microsoft.Office.Interop
+Imports Microsoft.Vbe.Interop
 
 Public Class Form1
 
@@ -25,7 +26,7 @@ Public Class Form1
             listaClientes = clienteNegocio.ListarClientes()
             dgvClientes.DataSource = listaClientes
             dgvClientes.Columns("Cliente").HeaderText = "Cliente"
-            dgvClientes.Columns("Correo").HeaderText = "Correo Electrónico"
+            dgvClientes.Columns("Correo").HeaderText = "Correo"
             dgvClientes.Columns("ID").Visible = False
         Catch ex As Exception
             MessageBox.Show("Error al cargar clientes: " & ex.Message)
@@ -65,19 +66,11 @@ Public Class Form1
     End Sub
 
     Private Sub tabClientes_Enter(sender As Object, e As EventArgs) Handles TabClientes.Enter
-        Me.BeginInvoke(Sub()
-                           If dgvClientes.Rows.Count > 0 Then
-                               dgvClientes.ClearSelection()
-                           End If
-                       End Sub)
+
     End Sub
 
     Private Sub tabVentas_Enter(sender As Object, e As EventArgs) Handles TabVentas.Enter
-        Me.BeginInvoke(Sub()
-                           If dgvVentas.Rows.Count > 0 Then
-                               dgvVentas.ClearSelection()
-                           End If
-                       End Sub)
+
     End Sub
     Private Sub btnEliminarCliente_Click(sender As Object, e As EventArgs) Handles btnEliminarCliente.Click
         If dgvClientes.SelectedRows.Count = 0 Then
@@ -126,7 +119,7 @@ Public Class Form1
     End Sub
 
 
-    Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click
+    Private Sub btnBuscarCliente_Click(sender As Object, e As EventArgs) Handles btnBuscarCliente.Click, TabVentas.Enter, TabClientes.Enter
         Dim textoBusqueda As String = txtBuscarCliente.Text.Trim().ToLower()
 
         If String.IsNullOrWhiteSpace(textoBusqueda) Then
@@ -268,16 +261,13 @@ Public Class Form1
     End Sub
 
 
-    Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click
+    Private Sub btnBuscarProducto_Click(sender As Object, e As EventArgs) Handles btnBuscarProducto.Click, TabControlMain.Enter
         Dim textoBusqueda As String = txtBuscarProducto.Text.Trim().ToLower()
 
         ' Si no hay texto, mostramos todos los productos
         If String.IsNullOrWhiteSpace(textoBusqueda) Then
             dgvProductos.DataSource = Nothing
             dgvProductos.DataSource = New BindingList(Of EntidadProducto)(listaproductos)
-            dgvProductos.Columns("Categoria").DisplayIndex = 0
-            dgvProductos.Columns("Nombre").DisplayIndex = 1
-            dgvProductos.Columns("Precio").DisplayIndex = 2
             Return
         End If
 
@@ -290,6 +280,11 @@ Public Class Form1
         dgvProductos.DataSource = Nothing
         dgvProductos.DataSource = New BindingList(Of EntidadProducto)(productosFiltrados)
         dgvProductos.Columns("ID").Visible = False
+        dgvProductos.Columns("Nombre").HeaderText = "Producto"
+        dgvProductos.Columns("Categoria").HeaderText = "Categoría"
+        dgvProductos.Columns("Categoria").DisplayIndex = 0
+        dgvProductos.Columns("Nombre").DisplayIndex = 1
+        dgvProductos.Columns("Precio").DisplayIndex = 2
     End Sub
 
     Private Sub btnFiltroProducto_Click(sender As Object, e As EventArgs) Handles btnFiltroProducto.Click
@@ -324,6 +319,7 @@ Public Class Form1
 
             dgvVentas.Columns("ID").Visible = False
             dgvVentas.Columns("IDCliente").Visible = False
+            dgvVentas.Columns("Total").DefaultCellStyle.Format = "C2"
             dgvVentas.Columns("NombreCliente").HeaderText = "Cliente"
             dgvVentas.Columns("Fecha").HeaderText = "Fecha"
             dgvVentas.Columns("Total").HeaderText = "Precio Total"
@@ -444,6 +440,8 @@ Public Class Form1
             For Each col As DataGridViewColumn In dgv.Columns
                 If Not columnasExcluidas.Contains(col.Name) Then
                     xlWorkSheet.Cells(1, colIndex) = col.HeaderText
+                    xlWorkSheet.Cells(1, colIndex).Interior.Color = Color.FromArgb(255, 0, 128, 0)
+                    xlWorkSheet.Cells(1, colIndex).Font.Color = Color.FromArgb(255, 255, 255)
                     colIndex += 1
                 End If
             Next
@@ -458,6 +456,8 @@ Public Class Form1
                             Dim valor = row.Cells(col.Index).Value
                             If valor IsNot Nothing Then
                                 xlWorkSheet.Cells(rowIndex, colIndex) = valor.ToString()
+                                xlWorkSheet.Cells(rowIndex, colIndex).Interior.Color = Color.FromArgb(255, 0, 172, 0)
+                                xlWorkSheet.Cells(rowIndex, colIndex).Font.Color = Color.FromArgb(255, 255, 255)
                             End If
                             colIndex += 1
                         End If
@@ -493,6 +493,8 @@ Public Class Form1
             For Each col As DataGridViewColumn In dgv.Columns
                 If Not columnasExcluidas.Contains(col.Name) Then
                     xlWorkSheet.Cells(1, colIndex) = col.HeaderText
+                    xlWorkSheet.Cells(1, colIndex).Interior.Color = Color.FromArgb(255, 0, 128, 0)
+                    xlWorkSheet.Cells(1, colIndex).Font.Color = Color.FromArgb(255, 255, 255)
                     colIndex += 1
                 End If
             Next
@@ -501,15 +503,49 @@ Public Class Form1
             Dim rowIndex As Integer = 2
             colIndex = 1
             Dim row As DataGridViewRow = dgv.CurrentRow
+            Dim idVenta As Integer = Convert.ToInt32(row.Cells("ID").Value)
 
             For Each col As DataGridViewColumn In dgv.Columns
                 If Not columnasExcluidas.Contains(col.Name) Then
                     Dim valor = row.Cells(col.Index).Value
                     If valor IsNot Nothing Then
                         xlWorkSheet.Cells(rowIndex, colIndex) = valor.ToString()
+                        xlWorkSheet.Cells(rowIndex, colIndex).Interior.Color = Color.FromArgb(255, 0, 172, 0)
+                        xlWorkSheet.Cells(rowIndex, colIndex).Font.Color = Color.FromArgb(255, 255, 255)
                     End If
                     colIndex += 1
                 End If
+            Next
+
+            Dim productos As List(Of EntidadVentaItem) = VentaNegocio.ObtenerItemsPorVentaID(idVenta)
+
+
+            For Each producto In productos
+                producto.NombreProducto = productoNegocio.ObtenerNombreProductoPorID(producto.IDProducto)
+            Next
+            ' Agregar encabezado de productos
+            rowIndex += 4 ' Deja una fila en blanco
+            xlWorkSheet.Cells(rowIndex, 1) = "Producto"
+            xlWorkSheet.Cells(rowIndex, 1).Interior.Color = Color.FromArgb(255, 255, 210, 0)
+            xlWorkSheet.Cells(rowIndex, 2) = "Precio Unitario"
+            xlWorkSheet.Cells(rowIndex, 2).Interior.Color = Color.FromArgb(255, 255, 210, 0)
+            xlWorkSheet.Cells(rowIndex, 3) = "Cantidad"
+            xlWorkSheet.Cells(rowIndex, 3).Interior.Color = Color.FromArgb(255, 255, 210, 0)
+            xlWorkSheet.Cells(rowIndex, 4) = "Precio Total"
+            xlWorkSheet.Cells(rowIndex, 4).Interior.Color = Color.FromArgb(255, 255, 210, 0)
+            rowIndex += 1
+
+            ' Escribir productos
+            For Each item In productos
+                xlWorkSheet.Cells(rowIndex, 1) = item.NombreProducto
+                xlWorkSheet.Cells(rowIndex, 1).Interior.Color = Color.FromArgb(255, 255, 255, 0)
+                xlWorkSheet.Cells(rowIndex, 2) = item.PrecioUnitario
+                xlWorkSheet.Cells(rowIndex, 2).Interior.Color = Color.FromArgb(255, 255, 255, 0)
+                xlWorkSheet.Cells(rowIndex, 3) = item.Cantidad
+                xlWorkSheet.Cells(rowIndex, 3).Interior.Color = Color.FromArgb(255, 255, 255, 0)
+                xlWorkSheet.Cells(rowIndex, 4) = item.PrecioTotal
+                xlWorkSheet.Cells(rowIndex, 4).Interior.Color = Color.FromArgb(255, 255, 255, 0)
+                rowIndex += 1
             Next
 
             xlApp.Visible = True

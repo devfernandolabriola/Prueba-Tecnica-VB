@@ -3,44 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\fergl\\source\\repos\\Examen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formdetalleventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formdetalleventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|c:\\users\\fergl\\source\\repos\\examen\\examen\\formdetalleventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formdetalleventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAA38A85-59D9-4BEC-ADDA-2038C5471802}|Capa de Dominio\\Negocio.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\capa de dominio\\ventanegocio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{BAA38A85-59D9-4BEC-ADDA-2038C5471802}|Capa de Dominio\\Negocio.vbproj|solutionrelative:capa de dominio\\ventanegocio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FFB75A1-2E49-43A3-9B3A-F9087489BA10}|Data\\Data.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\data\\conexion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{9FFB75A1-2E49-43A3-9B3A-F9087489BA10}|Data\\Data.vbproj|solutionrelative:data\\conexion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formseleccionarproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -51,8 +19,40 @@
       "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formseleccionarproducto.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formdetalleventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formdetalleventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|c:\\users\\fergl\\source\\repos\\examen\\examen\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formdetalleventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formdetalleventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAA38A85-59D9-4BEC-ADDA-2038C5471802}|Capa de Dominio\\Negocio.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\capa de dominio\\ventanegocio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{BAA38A85-59D9-4BEC-ADDA-2038C5471802}|Capa de Dominio\\Negocio.vbproj|solutionrelative:capa de dominio\\ventanegocio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\examen\\formcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{25660AF8-05A8-418C-978A-D3695EE0D9EF}|Examen\\Examen.vbproj|solutionrelative:examen\\formcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FFB75A1-2E49-43A3-9B3A-F9087489BA10}|Data\\Data.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\data\\conexion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{9FFB75A1-2E49-43A3-9B3A-F9087489BA10}|Data\\Data.vbproj|solutionrelative:data\\conexion.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCE2EF10-30A0-42A8-8279-8560DA2108EE}|Entidades\\Entidades.vbproj|C:\\Users\\fergl\\source\\repos\\Examen\\entidades\\entidadventa.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -94,17 +94,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\Form1.vb",
               "RelativeDocumentMoniker": "Examen\\Form1.vb",
               "ToolTip": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\Form1.vb",
               "RelativeToolTip": "Examen\\Form1.vb",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAAANsBAAAxAAAA",
+              "ViewState": "AQIAADcBAAAAAAAAAAAUwEEBAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-06-13T02:59:46.707Z",
               "IsPinned": true,
@@ -112,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\App.config",
               "RelativeDocumentMoniker": "Examen\\App.config",
@@ -125,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Conexion.vb",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Data\\Conexion.vb",
               "RelativeDocumentMoniker": "Data\\Conexion.vb",
@@ -137,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "FormCliente.vb",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormCliente.vb",
               "RelativeDocumentMoniker": "Examen\\FormCliente.vb",
@@ -145,7 +145,8 @@
               "RelativeToolTip": "Examen\\FormCliente.vb",
               "ViewState": "AQIAAE0AAAAAAAAAAAAvwFYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-06-17T22:32:08.903Z"
+              "WhenOpened": "2025-06-17T22:32:08.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -156,7 +157,8 @@
               "ToolTip": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormCliente.vb [Dise\u00F1o]",
               "RelativeToolTip": "Examen\\FormCliente.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-06-17T22:31:43.912Z"
+              "WhenOpened": "2025-06-17T22:31:43.912Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -171,32 +173,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "FormSeleccionarProducto.vb",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormSeleccionarProducto.vb",
               "RelativeDocumentMoniker": "Examen\\FormSeleccionarProducto.vb",
               "ToolTip": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormSeleccionarProducto.vb",
               "RelativeToolTip": "Examen\\FormSeleccionarProducto.vb",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAwC0AAAA3AAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAwDQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-06-17T22:17:45.712Z"
+              "WhenOpened": "2025-06-17T22:17:45.712Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "FormDetalleVenta.vb",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormDetalleVenta.vb",
               "RelativeDocumentMoniker": "Examen\\FormDetalleVenta.vb",
               "ToolTip": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormDetalleVenta.vb",
               "RelativeToolTip": "Examen\\FormDetalleVenta.vb",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAiwBgAAAALAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-06-17T21:19:08.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "FormDetalleVenta.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormDetalleVenta.vb",
               "RelativeDocumentMoniker": "Examen\\FormDetalleVenta.vb",
@@ -208,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form1.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\Form1.vb",
               "RelativeDocumentMoniker": "Examen\\Form1.vb",
@@ -244,31 +247,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "FormSeleccionarProducto.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormSeleccionarProducto.vb",
               "RelativeDocumentMoniker": "Examen\\FormSeleccionarProducto.vb",
               "ToolTip": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormSeleccionarProducto.vb [Dise\u00F1o]",
               "RelativeToolTip": "Examen\\FormSeleccionarProducto.vb [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-06-15T18:29:58.06Z"
+              "WhenOpened": "2025-06-15T18:29:58.06Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "FormVenta.vb",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormVenta.vb",
               "RelativeDocumentMoniker": "Examen\\FormVenta.vb",
               "ToolTip": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormVenta.vb",
               "RelativeToolTip": "Examen\\FormVenta.vb",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAmwEsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-06-15T17:00:44.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "FormVenta.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Examen\\FormVenta.vb",
               "RelativeDocumentMoniker": "Examen\\FormVenta.vb",
@@ -292,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "VentaNegocio.vb",
               "DocumentMoniker": "C:\\Users\\fergl\\source\\repos\\Examen\\Capa de Dominio\\VentaNegocio.vb",
               "RelativeDocumentMoniker": "Capa de Dominio\\VentaNegocio.vb",

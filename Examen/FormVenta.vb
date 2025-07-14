@@ -79,6 +79,8 @@ Public Class FormVenta
         dgvItemsVenta.Columns.Add("Cantidad", "Cantidad")
         dgvItemsVenta.Columns.Add("PrecioUnitario", "Precio Unitario")
         dgvItemsVenta.Columns.Add("PrecioTotal", "Precio Total")
+        dgvItemsVenta.Columns("PrecioUnitario").DefaultCellStyle.Format = "C2"
+        dgvItemsVenta.Columns("PrecioTotal").DefaultCellStyle.Format = "C2"
     End Sub
 
     Private Sub btnQuitarProducto_Click(sender As Object, e As EventArgs) Handles btnQuitarProducto.Click

@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.TabControlMain = New System.Windows.Forms.TabControl()
         Me.TabVentas = New System.Windows.Forms.TabPage()
+        Me.btnExportarSeleccionado = New System.Windows.Forms.Button()
         Me.Exportar_Venta = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblDesde = New System.Windows.Forms.Label()
@@ -58,7 +59,6 @@ Partial Class Form1
         Me.btnModificarProducto = New System.Windows.Forms.Button()
         Me.btnCrearProducto = New System.Windows.Forms.Button()
         Me.dgvProductos = New System.Windows.Forms.DataGridView()
-        Me.btnExportarSeleccionado = New System.Windows.Forms.Button()
         Me.TabControlMain.SuspendLayout()
         Me.TabVentas.SuspendLayout()
         CType(Me.dgvVentas, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,13 +105,22 @@ Partial Class Form1
         Me.TabVentas.Text = "Ventas"
         Me.TabVentas.UseVisualStyleBackColor = True
         '
+        'btnExportarSeleccionado
+        '
+        Me.btnExportarSeleccionado.Location = New System.Drawing.Point(722, 288)
+        Me.btnExportarSeleccionado.Name = "btnExportarSeleccionado"
+        Me.btnExportarSeleccionado.Size = New System.Drawing.Size(89, 23)
+        Me.btnExportarSeleccionado.TabIndex = 25
+        Me.btnExportarSeleccionado.Text = "Exportar Sel."
+        Me.btnExportarSeleccionado.UseVisualStyleBackColor = True
+        '
         'Exportar_Venta
         '
-        Me.Exportar_Venta.Location = New System.Drawing.Point(722, 254)
+        Me.Exportar_Venta.Location = New System.Drawing.Point(722, 259)
         Me.Exportar_Venta.Name = "Exportar_Venta"
         Me.Exportar_Venta.Size = New System.Drawing.Size(89, 23)
         Me.Exportar_Venta.TabIndex = 24
-        Me.Exportar_Venta.Text = "Exportar"
+        Me.Exportar_Venta.Text = "Exportar Vista"
         Me.Exportar_Venta.UseVisualStyleBackColor = True
         '
         'Label1
@@ -143,7 +152,7 @@ Partial Class Form1
         '
         'btnDetalleVenta
         '
-        Me.btnDetalleVenta.Location = New System.Drawing.Point(722, 196)
+        Me.btnDetalleVenta.Location = New System.Drawing.Point(722, 201)
         Me.btnDetalleVenta.Name = "btnDetalleVenta"
         Me.btnDetalleVenta.Size = New System.Drawing.Size(89, 23)
         Me.btnDetalleVenta.TabIndex = 20
@@ -152,7 +161,7 @@ Partial Class Form1
         '
         'btnVerCliente
         '
-        Me.btnVerCliente.Location = New System.Drawing.Point(722, 225)
+        Me.btnVerCliente.Location = New System.Drawing.Point(722, 230)
         Me.btnVerCliente.Name = "btnVerCliente"
         Me.btnVerCliente.Size = New System.Drawing.Size(89, 23)
         Me.btnVerCliente.TabIndex = 19
@@ -161,7 +170,7 @@ Partial Class Form1
         '
         'dgvLimpiarFiltrosVenta
         '
-        Me.dgvLimpiarFiltrosVenta.Location = New System.Drawing.Point(722, 167)
+        Me.dgvLimpiarFiltrosVenta.Location = New System.Drawing.Point(722, 156)
         Me.dgvLimpiarFiltrosVenta.Name = "dgvLimpiarFiltrosVenta"
         Me.dgvLimpiarFiltrosVenta.Size = New System.Drawing.Size(89, 23)
         Me.dgvLimpiarFiltrosVenta.TabIndex = 18
@@ -184,7 +193,7 @@ Partial Class Form1
         '
         'btnEliminarVenta
         '
-        Me.btnEliminarVenta.Location = New System.Drawing.Point(620, 254)
+        Me.btnEliminarVenta.Location = New System.Drawing.Point(627, 259)
         Me.btnEliminarVenta.Name = "btnEliminarVenta"
         Me.btnEliminarVenta.Size = New System.Drawing.Size(89, 23)
         Me.btnEliminarVenta.TabIndex = 14
@@ -193,7 +202,7 @@ Partial Class Form1
         '
         'btnCrearVenta
         '
-        Me.btnCrearVenta.Location = New System.Drawing.Point(620, 196)
+        Me.btnCrearVenta.Location = New System.Drawing.Point(627, 201)
         Me.btnCrearVenta.Name = "btnCrearVenta"
         Me.btnCrearVenta.Size = New System.Drawing.Size(89, 23)
         Me.btnCrearVenta.TabIndex = 13
@@ -202,7 +211,7 @@ Partial Class Form1
         '
         'btnModificarVenta
         '
-        Me.btnModificarVenta.Location = New System.Drawing.Point(620, 225)
+        Me.btnModificarVenta.Location = New System.Drawing.Point(627, 230)
         Me.btnModificarVenta.Name = "btnModificarVenta"
         Me.btnModificarVenta.Size = New System.Drawing.Size(89, 23)
         Me.btnModificarVenta.TabIndex = 12
@@ -211,7 +220,7 @@ Partial Class Form1
         '
         'btnBuscarVenta
         '
-        Me.btnBuscarVenta.Location = New System.Drawing.Point(620, 167)
+        Me.btnBuscarVenta.Location = New System.Drawing.Point(627, 156)
         Me.btnBuscarVenta.Name = "btnBuscarVenta"
         Me.btnBuscarVenta.Size = New System.Drawing.Size(89, 23)
         Me.btnBuscarVenta.TabIndex = 11
@@ -430,15 +439,6 @@ Partial Class Form1
         Me.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvProductos.Size = New System.Drawing.Size(602, 308)
         Me.dgvProductos.TabIndex = 0
-        '
-        'btnExportarSeleccionado
-        '
-        Me.btnExportarSeleccionado.Location = New System.Drawing.Point(722, 281)
-        Me.btnExportarSeleccionado.Name = "btnExportarSeleccionado"
-        Me.btnExportarSeleccionado.Size = New System.Drawing.Size(89, 23)
-        Me.btnExportarSeleccionado.TabIndex = 25
-        Me.btnExportarSeleccionado.Text = "Exportar Sel."
-        Me.btnExportarSeleccionado.UseVisualStyleBackColor = True
         '
         'Form1
         '

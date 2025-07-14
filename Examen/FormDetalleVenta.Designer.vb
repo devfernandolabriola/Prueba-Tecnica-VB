@@ -24,7 +24,6 @@ Partial Class FormDetalleVenta
     Private Sub InitializeComponent()
         Me.dgvDetalleVenta = New System.Windows.Forms.DataGridView()
         Me.lblPrecioFinal = New System.Windows.Forms.Label()
-        Me.ExportarDetalle = New System.Windows.Forms.Button()
         CType(Me.dgvDetalleVenta, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -50,21 +49,11 @@ Partial Class FormDetalleVenta
         Me.lblPrecioFinal.TabIndex = 1
         Me.lblPrecioFinal.Text = "Label1"
         '
-        'ExportarDetalle
-        '
-        Me.ExportarDetalle.Location = New System.Drawing.Point(584, 241)
-        Me.ExportarDetalle.Name = "ExportarDetalle"
-        Me.ExportarDetalle.Size = New System.Drawing.Size(114, 23)
-        Me.ExportarDetalle.TabIndex = 2
-        Me.ExportarDetalle.Text = "Exportar"
-        Me.ExportarDetalle.UseVisualStyleBackColor = True
-        '
         'FormDetalleVenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(748, 313)
-        Me.Controls.Add(Me.ExportarDetalle)
         Me.Controls.Add(Me.lblPrecioFinal)
         Me.Controls.Add(Me.dgvDetalleVenta)
         Me.Name = "FormDetalleVenta"
@@ -77,5 +66,4 @@ Partial Class FormDetalleVenta
 
     Friend WithEvents dgvDetalleVenta As DataGridView
     Friend WithEvents lblPrecioFinal As Label
-    Friend WithEvents ExportarDetalle As Button
 End Class
