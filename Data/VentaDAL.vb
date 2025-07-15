@@ -43,13 +43,14 @@ Public Class VentaDAL
         Dim lista As New List(Of EntidadVenta)
         Try
             Using con As SqlConnection = Conexion.AbrirConexion()
-                Dim query As String = "Select ID, IDCliente, Fecha, Total FROM ventas"
+                Dim query As String = "Select v.ID, v.IDCliente, c.Cliente, v.Fecha, v.Total FROM ventas v INNER JOIN Clientes c ON v.IDCliente = c.ID"
                 Using cmd As New SqlCommand(query, con)
                     Using reader As SqlDataReader = cmd.ExecuteReader()
                         While reader.Read()
                             Dim venta As New EntidadVenta With {
                                 .ID = Convert.ToInt32(reader("ID")),
                                 .IDCliente = Convert.ToInt32(reader("IDCliente")),
+                                .NombreCliente = reader("Cliente").ToString(),
                                 .Fecha = Convert.ToDateTime(reader("Fecha")),
                                 .Total = Convert.ToDecimal(reader("Total")),
                                 .Detalle = New List(Of EntidadVentaItem)()
@@ -96,6 +97,34 @@ Public Class VentaDAL
 
         Return lista
     End Function
+
+    Public Function ObtenercantidaditemsporVentaID(IDVenta As Integer) As List(Of EntidadVentaItem)
+        Dim lista As New List(Of EntidadVentaItem)
+
+        Try
+            Using con As SqlConnection = Conexion.AbrirConexion()
+                Dim query As String = "SELECT Cantidad FROM VentasItems WHERE IDVenta = @IDVenta"
+
+                Using cmd As New SqlCommand(query, con)
+                    cmd.Parameters.AddWithValue("@IDVenta", IDVenta)
+
+                    Using reader As SqlDataReader = cmd.ExecuteReader()
+                        While reader.Read()
+                            Dim item As New EntidadVentaItem With {
+                                .Cantidad = Convert.ToInt32(reader("Cantidad"))
+                            }
+                            lista.Add(item)
+                        End While
+                    End Using
+                End Using
+            End Using
+        Catch ex As Exception
+            Throw New Exception("Error al obtener ítems de venta: " & ex.Message)
+        End Try
+
+        Return lista
+    End Function
+
     Public Sub EliminarVenta(idVenta As Integer)
         Using con As SqlConnection = Conexion.AbrirConexion()
             Dim trans As SqlTransaction = con.BeginTransaction()

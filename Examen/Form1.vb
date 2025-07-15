@@ -310,8 +310,7 @@ Public Class Form1
             ventas = VentaNegocio.ListarVentas()
 
             For Each v In ventas
-                v.NombreCliente = clienteNegocio.BuscarNombreClientePorID(v.IDCliente)
-                v.Detalle = VentaNegocio.ObtenerItemsPorVentaID(v.ID)
+                v.Detalle = VentaNegocio.ObtenercantidaditemsporVentaID(v.ID)
             Next
 
             dgvVentas.DataSource = Nothing
@@ -379,6 +378,20 @@ Public Class Form1
         Dim textoCliente = txtBuscarVenta.Text.Trim().ToLower()
         Dim fechaDesde = dtpDesde.Value.Date
         Dim fechaHasta = dtpHasta.Value.Date
+
+        If fechaDesde > fechaHasta Then
+            MessageBox.Show("La fecha 'Desde' no puede ser mayor que la fecha 'Hasta'.", "Error de fechas", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            dtpDesde.Value = dtpHasta.Value.Date
+            fechaDesde = dtpDesde.Value.Date
+            Return
+        End If
+
+        If fechaHasta > DateTime.Now Then
+            MessageBox.Show("La fecha 'Hasta' no puede ser posterior a la fecha actual.", "Error de fechas", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            dtpHasta.Value = DateTime.Now
+            fechaHasta = dtpHasta.Value.Date
+            Return
+        End If
 
         Dim ventasFiltradas = ventas.Where(Function(v)
                                                Dim coincideCliente = String.IsNullOrWhiteSpace(textoCliente) OrElse

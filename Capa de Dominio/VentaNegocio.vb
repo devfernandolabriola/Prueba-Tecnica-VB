@@ -44,4 +44,8 @@ Public Class VentaNegocio
     Public Function ObtenerItemsPorVentaID(IDVenta As Integer) As List(Of EntidadVentaItem)
         Return VentaDAL.ObtenerItemsPorVentaID(IDVenta)
     End Function
+
+    Public Function ObtenercantidaditemsporVentaID(IDVenta As Integer) As List(Of EntidadVentaItem)
+        Return VentaDAL.ObtenercantidaditemsporVentaID(IDVenta)
+    End Function
 End Class
